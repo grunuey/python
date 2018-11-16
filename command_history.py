@@ -1,4 +1,63 @@
 # Basic setting
+# now : 현재 저장된 커맨드 내용
+# save : 사용자가 입력한 커맨드를 저장한 뒤의 커맨드 저장 내용
+# amount : 저장할 커맨드의 수량
+# input_command : 사용자가 입력한 커맨드
+
+
+
+
+
+'''
+class command_history():
+    def __init__(self):
+        self.now = []
+    
+    def __str__(self):
+        print(now)
+
+test = command_history('노답')
+print(test)
+'''
+
+'''
+class command_history():
+    def __init__(self):
+        self.now = []
+    
+    def push(input_command):
+        self.now.append(input_command)
+    
+    def __str__(self):
+        print("{}".format(self.now))
+
+s = command_history(input_command)
+print(s)
+'''
+
+'''
+input_command = input('> ')
+
+class history():
+    def __init__(self,now,save,amount):
+        history.now = now
+        history.save = save
+        history.amount = amount
+        
+    def history_add(self):
+        history.save = history.now + input_command
+    
+    def __str__(self):
+        print("{}".format(self.save))
+        print("{}".format(self.now))
+        print("{}".format(self.amount))
+        
+command_history = history(0,1,2)
+print(command_history)
+'''
+
+'''
+# Basic setting
 # history_text : 유저가 입력한 값 중 저장된 내용
 # history_list : historytext에 저장할 값 갯수 제한 수치
 history_text=['G','R','U','N','U','E','Y']
@@ -34,3 +93,4 @@ for history_text in history_text:
 else:
     print()
 # end of function history_print
+'''
