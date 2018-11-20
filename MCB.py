@@ -6,16 +6,16 @@
 import random
 Hand_List = ['묵','찌','빠']
 User_State = 0
-Message_Start = '[ 컴퓨터와 묵찌빠를 시작합니다. ]'
-Message_Input = '묵, 찌, 빠 중 하나를 선택하세요. : '
-Message_Error = '에러가 발생했습니다.'
-Message_Choice = '> 묵, 찌, 빠 이외의 패를 선택하셨습니다.'
-Message_Hand = '> 당신은 ({}), 컴퓨터는 ({}) 입니다.'
-Message_Trun = '> 공격, 수비를 결정하겠습니다.'
-Message_Attack = '> 당신이 공격입니다.'
-Message_Defense = '> 당신이 수비입니다.'
-Message_Win = '[ 같은 패로 당신이 승리하였습니다. ]'
-Message_lose = '[ 같은 패로 당신이 패배하였습니다. ]'
+Message_Start = '[ 컴퓨터와 묵찌빠를 시작합니다 ]'
+Message_Input = '묵, 찌, 빠 중 하나를 선택하세요 : '
+Message_Error = '에러가 발생했습니다'
+Message_Choice = '> 묵, 찌, 빠 이외의 패를 선택하셨습니다'
+Message_Hand = '> 당신 : {} / 컴퓨터 : {}'
+Message_Trun = '>> 공격, 수비를 결정하겠습니다'
+Message_Attack = '>> 당신이 공격입니다'
+Message_Defense = '>> 당신이 수비입니다'
+Message_Win = '[ 당신이 승리 하였습니다 ]'
+Message_lose = '[ 당신이 패배 하였습니다 ]'
 # end of Predefine
 
 # begin of function Computer_Choice
