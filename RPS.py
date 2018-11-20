@@ -23,15 +23,18 @@ def Computer_Choice():
 # User_Choice : 유저가 선택한 패
 def Player_Choice():
     User_Choice = input(Message_Input)
-    if User_Choice=='바위':
+    if User_Choice == '가위':
         return User_Choice
-    if User_Choice=='보':
+    if User_Choice == '바위':
         return User_Choice
-    if User_Choice=='가위':
+    if User_Choice == '보':
         return User_Choice
     else:
-        print(Message_Error)
-        User_Input()
+        while User_Choice not in ['가위','바위','보']:
+            print(Message_Error)
+            User_Choice = input(Message_Input)
+            continue
+        return User_Choice
 # end of function Player_Choice
 
 # begin of function RPS_Rule
