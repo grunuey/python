@@ -31,18 +31,11 @@ def Computer_Choice():
 # User_Choice : 유저가 선택한 패
 def Player_Choice():
     User_Choice = input(Message_Input)
-    if User_Choice == '묵':
-        return User_Choice
-    if User_Choice == '찌':
-        return User_Choice
-    if User_Choice == '빠':
-        return User_Choice
-    else:
-        while User_Choice not in ['묵','찌','빠']:
-            print(Message_Choice)
-            User_Choice = input(Message_Input)
-            continue
-        return User_Choice
+    while User_Choice not in ['묵','찌','빠']:
+        print(Message_Choice)
+        User_Choice = input(Message_Input)
+        continue
+    return User_Choice
 # end of function Player_Choice
 
 # begin of function Hand_Check
